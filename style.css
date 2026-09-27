@@ -179,6 +179,19 @@ p {
 }
 
 
+/* Emphasis */
+
+.emphasis {
+  color: #202020;
+  font-weight: 650;
+}
+
+.impact {
+  color: #111111;
+  font-weight: 700;
+}
+
+
 /* Lists */
 
 ul {
@@ -220,7 +233,7 @@ li::marker {
 
 .skills strong {
   color: #333333;
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .skills span {
