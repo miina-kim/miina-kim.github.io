@@ -41,7 +41,9 @@ header {
 
 h1 {
   margin: 0 0 7px;
+
   color: #111111;
+
   font-size: 43px;
   font-weight: 700;
   line-height: 1.15;
@@ -50,14 +52,18 @@ h1 {
 
 .title {
   margin: 0;
+
   color: #2f2f2f;
+
   font-size: 19px;
   font-weight: 600;
 }
 
 .subtitle {
   margin: 5px 0 0;
+
   color: #777777;
+
   font-size: 15px;
   font-weight: 400;
 }
@@ -69,36 +75,46 @@ h1 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+
   gap: 20px;
+
   margin-top: 17px;
 }
 
-.contact-link,
-.contact-link:visited {
+.contact-link {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
 
-  color: #0066cc !important;
+  gap: 7px;
 
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
 
+  text-decoration: none;
+}
+
+.link-text,
+.contact-link:visited .link-text {
+  color: #0066cc !important;
+
   text-decoration: underline !important;
-  text-decoration-thickness: 1px !important;
+  text-decoration-color: #0066cc !important;
+  text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
-.contact-link:hover {
+.contact-link:hover .link-text {
   color: #004999 !important;
+  text-decoration-color: #004999 !important;
 }
 
 .mail-icon {
   display: inline-block;
+
   width: 16px;
 
-  color: #0066cc;
+  color: #0066cc !important;
 
   font-size: 15px;
   line-height: 1;
@@ -114,8 +130,8 @@ h1 {
   width: 16px;
   height: 16px;
 
-  background: #0066cc;
-  color: #ffffff;
+  background: #0066cc !important;
+  color: #ffffff !important;
 
   border-radius: 2px;
 
@@ -125,12 +141,12 @@ h1 {
   line-height: 1;
 }
 
-.contact-link:hover .linkedin-icon {
-  background: #004999;
+.contact-link:hover .mail-icon {
+  color: #004999 !important;
 }
 
-.contact-link:hover .mail-icon {
-  color: #004999;
+.contact-link:hover .linkedin-icon {
+  background: #004999 !important;
 }
 
 
@@ -154,12 +170,7 @@ h2 {
 }
 
 
-/* Body text */
-
-section p,
-section li {
-  font-weight: 400 !important;
-}
+/* Items */
 
 .item {
   margin-bottom: 31px;
@@ -173,6 +184,7 @@ section li {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
   gap: 25px;
 }
 
@@ -202,11 +214,19 @@ section li {
   color: #666666;
 
   font-size: 14.5px;
-  font-weight: 500 !important;
+  font-weight: 500;
 }
 
 p {
   margin: 6px 0;
+}
+
+
+/* Body text */
+
+section p,
+section li {
+  font-weight: 400;
 }
 
 
@@ -244,7 +264,9 @@ li::marker {
 .skills p {
   display: grid;
   grid-template-columns: 135px 1fr;
+
   gap: 12px;
+
   margin: 7px 0;
 }
 
