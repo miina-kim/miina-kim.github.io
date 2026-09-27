@@ -8,8 +8,10 @@ html {
 
 body {
   margin: 0;
+
   background: #ffffff;
   color: #292929;
+
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -17,8 +19,10 @@ body {
     Helvetica,
     Arial,
     sans-serif;
+
   font-size: 15.5px;
   line-height: 1.7;
+
   -webkit-font-smoothing: antialiased;
 }
 
@@ -37,7 +41,9 @@ header {
 
 h1 {
   margin: 0 0 7px;
+
   color: #111111;
+
   font-size: 43px;
   font-weight: 700;
   line-height: 1.15;
@@ -46,14 +52,18 @@ h1 {
 
 .title {
   margin: 0;
+
   color: #2f2f2f;
+
   font-size: 19px;
   font-weight: 600;
 }
 
 .subtitle {
   margin: 5px 0 0;
-  color: #7a7a7a;
+
+  color: #777777;
+
   font-size: 15px;
 }
 
@@ -64,30 +74,52 @@ h1 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 18px;
-  margin-top: 16px;
+
+  gap: 20px;
+
+  margin-top: 17px;
 }
 
 .contact-link {
   display: inline-flex;
   align-items: center;
+
   gap: 7px;
-  color: #555555;
+
+  color: #3f6285;
+
   font-size: 14px;
-  line-height: 1;
-  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.2;
+
+  text-decoration: underline;
+  text-decoration-color: #a9b9c8;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+
+  transition:
+    color 0.15s ease,
+    text-decoration-color 0.15s ease;
 }
 
 .contact-link:hover {
-  color: #111111;
+  color: #173b5c;
+  text-decoration-color: #173b5c;
 }
 
 .mail-icon {
   display: inline-block;
+
   width: 16px;
+
+  color: #4b647c;
+
   font-size: 15px;
   line-height: 1;
+
   text-align: center;
+
+  text-decoration: none;
 }
 
 .linkedin-icon {
@@ -98,7 +130,7 @@ h1 {
   width: 16px;
   height: 16px;
 
-  background: #444444;
+  background: #4b647c;
   color: #ffffff;
 
   border-radius: 2px;
@@ -107,6 +139,16 @@ h1 {
   font-size: 10px;
   font-weight: 700;
   line-height: 1;
+
+  text-decoration: none;
+}
+
+.contact-link:hover .linkedin-icon {
+  background: #173b5c;
+}
+
+.contact-link:hover .mail-icon {
+  color: #173b5c;
 }
 
 
@@ -119,6 +161,7 @@ section {
 h2 {
   margin: 0 0 25px;
   padding-bottom: 9px;
+
   border-bottom: 1px solid #dddddd;
 
   color: #171717;
@@ -143,6 +186,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
   gap: 25px;
 }
 
@@ -181,8 +225,8 @@ p {
 
 /* Emphasis */
 
-.emphasis {
-  color: #202020;
+strong {
+  color: #1d1d1d;
   font-weight: 650;
 }
 
@@ -226,6 +270,7 @@ li::marker {
 .skills p {
   display: grid;
   grid-template-columns: 135px 1fr;
+
   gap: 12px;
 
   margin: 7px 0;
@@ -233,93 +278,4 @@ li::marker {
 
 .skills strong {
   color: #333333;
-  font-weight: 650;
-}
-
-.skills span {
-  color: #4f4f4f;
-}
-
-
-/* Text selection */
-
-::selection {
-  background: #ededed;
-  color: #111111;
-}
-
-
-/* Mobile */
-
-@media (max-width: 650px) {
-
-  body {
-    font-size: 15px;
-  }
-
-  .container {
-    width: calc(100% - 36px);
-    padding: 45px 0 70px;
-  }
-
-  header {
-    margin-bottom: 50px;
-  }
-
-  h1 {
-    font-size: 35px;
-  }
-
-  .title {
-    font-size: 17px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-  }
-
-  .contact {
-    gap: 14px;
-    margin-top: 15px;
-  }
-
-  .contact-link {
-    font-size: 13.5px;
-  }
-
-  section {
-    margin-bottom: 44px;
-  }
-
-  h2 {
-    margin-bottom: 21px;
-    font-size: 19px;
-  }
-
-  .item {
-    margin-bottom: 27px;
-  }
-
-  .item-header {
-    display: block;
-  }
-
-  .item-header h3 {
-    font-size: 16.5px;
-  }
-
-  .item-header span {
-    display: block;
-    margin-top: 2px;
-  }
-
-  .skills p {
-    display: block;
-    margin-bottom: 12px;
-  }
-
-  .skills strong {
-    display: block;
-    margin-bottom: 2px;
-  }
-}
+  font-weight:
