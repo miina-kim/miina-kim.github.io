@@ -20,7 +20,9 @@ body {
     sans-serif;
 
   font-size: 15.5px;
+  font-weight: 400;
   line-height: 1.7;
+
   -webkit-font-smoothing: antialiased;
 }
 
@@ -39,9 +41,7 @@ header {
 
 h1 {
   margin: 0 0 7px;
-
   color: #111111;
-
   font-size: 43px;
   font-weight: 700;
   line-height: 1.15;
@@ -50,19 +50,16 @@ h1 {
 
 .title {
   margin: 0;
-
   color: #2f2f2f;
-
   font-size: 19px;
   font-weight: 600;
 }
 
 .subtitle {
   margin: 5px 0 0;
-
   color: #777777;
-
   font-size: 15px;
+  font-weight: 400;
 }
 
 
@@ -72,49 +69,41 @@ h1 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
   gap: 20px;
-
   margin-top: 17px;
 }
 
-.contact-link {
+.contact-link,
+.contact-link:visited {
   display: inline-flex;
   align-items: center;
-
   gap: 7px;
 
-  color: #0969da;
+  color: #0066cc !important;
 
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
 
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-
-.contact-link:visited {
-  color: #0969da;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 2px;
 }
 
 .contact-link:hover {
-  color: #0550ae;
+  color: #004999 !important;
 }
 
 .mail-icon {
   display: inline-block;
-
   width: 16px;
 
-  color: #0969da;
+  color: #0066cc;
 
   font-size: 15px;
   line-height: 1;
-  text-align: center;
 
-  text-decoration: none;
+  text-align: center;
 }
 
 .linkedin-icon {
@@ -125,7 +114,7 @@ h1 {
   width: 16px;
   height: 16px;
 
-  background: #0969da;
+  background: #0066cc;
   color: #ffffff;
 
   border-radius: 2px;
@@ -134,16 +123,14 @@ h1 {
   font-size: 10px;
   font-weight: 700;
   line-height: 1;
-
-  text-decoration: none;
 }
 
 .contact-link:hover .linkedin-icon {
-  background: #0550ae;
+  background: #004999;
 }
 
 .contact-link:hover .mail-icon {
-  color: #0550ae;
+  color: #004999;
 }
 
 
@@ -167,7 +154,12 @@ h2 {
 }
 
 
-/* Items */
+/* Body text */
+
+section p,
+section li {
+  font-weight: 400 !important;
+}
 
 .item {
   margin-bottom: 31px;
@@ -181,7 +173,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-
   gap: 25px;
 }
 
@@ -201,6 +192,7 @@ h2 {
   color: #888888;
 
   font-size: 13.5px;
+  font-weight: 400;
   white-space: nowrap;
 }
 
@@ -210,7 +202,7 @@ h2 {
   color: #666666;
 
   font-size: 14.5px;
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 p {
@@ -252,9 +244,7 @@ li::marker {
 .skills p {
   display: grid;
   grid-template-columns: 135px 1fr;
-
   gap: 12px;
-
   margin: 7px 0;
 }
 
@@ -265,14 +255,7 @@ li::marker {
 
 .skills span:not(.skill-label) {
   color: #4f4f4f;
-}
-
-
-/* Text selection */
-
-::selection {
-  background: #e9eef3;
-  color: #111111;
+  font-weight: 400;
 }
 
 
