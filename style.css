@@ -8,7 +8,6 @@ html {
 
 body {
   margin: 0;
-
   background: #ffffff;
   color: #292929;
 
@@ -22,7 +21,6 @@ body {
 
   font-size: 15.5px;
   line-height: 1.7;
-
   -webkit-font-smoothing: antialiased;
 }
 
@@ -86,25 +84,23 @@ h1 {
 
   gap: 7px;
 
-  color: #3f6285;
+  color: #0969da;
 
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 
   text-decoration: underline;
-  text-decoration-color: #a9b9c8;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+}
 
-  transition:
-    color 0.15s ease,
-    text-decoration-color 0.15s ease;
+.contact-link:visited {
+  color: #0969da;
 }
 
 .contact-link:hover {
-  color: #173b5c;
-  text-decoration-color: #173b5c;
+  color: #0550ae;
 }
 
 .mail-icon {
@@ -112,11 +108,10 @@ h1 {
 
   width: 16px;
 
-  color: #4b647c;
+  color: #0969da;
 
   font-size: 15px;
   line-height: 1;
-
   text-align: center;
 
   text-decoration: none;
@@ -130,7 +125,7 @@ h1 {
   width: 16px;
   height: 16px;
 
-  background: #4b647c;
+  background: #0969da;
   color: #ffffff;
 
   border-radius: 2px;
@@ -144,11 +139,11 @@ h1 {
 }
 
 .contact-link:hover .linkedin-icon {
-  background: #173b5c;
+  background: #0550ae;
 }
 
 .contact-link:hover .mail-icon {
-  color: #173b5c;
+  color: #0550ae;
 }
 
 
@@ -215,24 +210,11 @@ h2 {
   color: #666666;
 
   font-size: 14.5px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 p {
   margin: 6px 0;
-}
-
-
-/* Emphasis */
-
-strong {
-  color: #1d1d1d;
-  font-weight: 650;
-}
-
-.impact {
-  color: #111111;
-  font-weight: 700;
 }
 
 
@@ -276,6 +258,95 @@ li::marker {
   margin: 7px 0;
 }
 
-.skills strong {
+.skill-label {
   color: #333333;
-  font-weight:
+  font-weight: 600;
+}
+
+.skills span:not(.skill-label) {
+  color: #4f4f4f;
+}
+
+
+/* Text selection */
+
+::selection {
+  background: #e9eef3;
+  color: #111111;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    width: calc(100% - 36px);
+    padding: 45px 0 70px;
+  }
+
+  header {
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .contact {
+    gap: 14px;
+    margin-top: 15px;
+  }
+
+  .contact-link {
+    font-size: 13.5px;
+  }
+
+  section {
+    margin-bottom: 44px;
+  }
+
+  h2 {
+    margin-bottom: 21px;
+    font-size: 19px;
+  }
+
+  .item {
+    margin-bottom: 27px;
+  }
+
+  .item-header {
+    display: block;
+  }
+
+  .item-header h3 {
+    font-size: 16.5px;
+  }
+
+  .item-header span {
+    display: block;
+    margin-top: 2px;
+  }
+
+  .skills p {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .skill-label {
+    display: block;
+    margin-bottom: 2px;
+  }
+}
