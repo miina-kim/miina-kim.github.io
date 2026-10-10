@@ -1,330 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-    name="description"
-    content="Mina Kim - Data Scientist and Manufacturing Systems Engineer"
-  >
-  <title>Mina Kim</title>
-  <link rel="stylesheet" href="style.css?v=11">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Mina Kim — Data Science, Manufacturing Analytics, and Applied AI">
+ <title>Mina Kim | Curriculum Vitae</title>
+ <link rel="stylesheet" href="style.css?v=12">
 </head>
-
 <body>
-  <main class="container">
-
-    <!-- Header -->
-    <header>
-      <h1>Mina Kim</h1>
-
-      <p class="title">
-        Data Scientist | Manufacturing Systems Engineer
-      </p>
-
-      <p class="subtitle">
-        Data Science · Manufacturing Analytics · Applied AI · AI Agents
-      </p>
-
-      <div class="contact">
-        <a
-          href="mailto:alsdk4104@gmail.com"
-          class="contact-link"
-        >
-          <span class="mail-icon"></span>
-          <span class="link-text">alsdk4104@gmail.com</span>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/minakim0114"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="contact-link"
-        >
-          <span class="linkedin-icon">in</span>
-          <span class="link-text">LinkedIn</span>
-        </a>
-      </div>
-    </header>
-
-
-    <!-- About -->
-    <section>
-      <h2>About</h2>
-
-      <p>
-        Data scientist with 6+ years of experience applying analytics,
-        machine learning, and AI to manufacturing and enterprise data.
-        My background spans semiconductor quality analytics, manufacturing
-        systems, and LLM-based engineering tools, with a focus on turning
-        complex operational data into scalable analysis and decision-support
-        systems.
-      </p>
-    </section>
-
-
-    <!-- Experience -->
-    <section>
-      <h2>Experience</h2>
-
-      <div class="item">
-        <div class="item-header">
-          <h3>Samsung Electro-Mechanics</h3>
-          <span>Feb 2022 – Present</span>
-        </div>
-
-        <p class="role">
-          Data Scientist / MES PI Engineer
-        </p>
-
-        <ul>
+<main class="container">
+ <header>
+  <h1>Mina Kim</h1>
+  <p class="title">Data Scientist | Manufacturing Systems Engineer</p>
+  <p class="subtitle">Data Science · Manufacturing Analytics · Applied AI · AI Agents</p>
+  <div class="contact">
+   <a href="mailto:alsdk4104@gmail.com">alsdk4104@gmail.com</a>
+   <span class="contact-divider" aria-hidden="true">·</span>
+   <a href="https://www.linkedin.com/in/minakim0114" target="_blank" rel="noopener noreferrer">linkedin.com/in/minakim0114</a>
+  </div>
+ </header>
+ <section class="about">
+  <h2>About</h2>
+  <p>Data scientist with 6+ years of experience in manufacturing analytics, experimentation, and applied AI. Collaborates with engineering and business teams to translate operational needs into analytical tools and AI systems, including machine learning models, automated analysis workflows, and AI assistants deployed in manufacturing.</p>
+ </section>
+ <section>
+  <h2>Experience</h2>
+  <article class="item">
+ <div class="item-header"><h3>Samsung Electro-Mechanics</h3><span class="date">Feb 2022 – Present</span></div>
+ <p class="role">Data Scientist / MES Process Innovation Engineer</p>
+         <ul>
           <li>
-            Built end-to-end quality analytics for semiconductor packaging,
-            combining anomaly detection, statistical analysis, process-path
-            analysis, and automated reporting; reduced a recurring analysis
-            workflow from over 3 hours to approximately 20 minutes.
+            Led the development of a manufacturing AI assistant from requirements gathering through production deployment, using LangGraph to integrate RAG, natural-language database queries, and automated yield analysis.
           </li>
 
           <li>
-            Developed defect-map analytics using unsupervised pattern discovery,
-            CNN classification, and similarity search to identify and retrieve
-            failure patterns beyond existing rule-based methods.
+            Identified <strong>14 semiconductor-packaging defect categories</strong> through unsupervised learning and deployed CNN-based classification, vector similarity search, and anomaly detection for yield and manufacturing engineers.
           </li>
 
           <li>
-            Built an AI assistant for manufacturing yield analysis, integrating
-            engineering knowledge retrieval, structured manufacturing-data
-            access, analysis interpretation, and historical case recommendations.
+            Automated yield analysis, reducing investigation and action-planning time from <strong>over 3 hours to approximately 20 minutes</strong> and delivering daily reports to <strong>170 recipients</strong>. Built a searchable archive of investigation records using vector and graph databases.
           </li>
 
           <li>
-            Optimized retrieval performance through hybrid lexical and semantic
-            search, establishing a shared retrieval layer for knowledge search,
-            entity matching, and historical case retrieval across the AI assistant.
+            Developed a shared retrieval layer combining weighted lexical search, semantic search, and reranking to handle variations in manufacturing terminology while preserving exact matches; evaluated performance using a custom test set.
           </li>
 
           <li>
-            Designed and operated MES workflows for camera-module manufacturing,
-            including lot lifecycle, material and tooling controls, process and
-            equipment integration, and new SMT line ramp-up.
+            Designed and maintained MES workflows for camera-module production, coordinating requirements across teams and supporting daily operations, material and tooling controls, and the launch of a new production line in Vietnam.
           </li>
         </ul>
-      </div>
-
-
-      <div class="item">
-        <div class="item-header">
-          <h3>LG CNS</h3>
-          <span>Feb 2020 – Feb 2022</span>
-        </div>
-
-        <p class="role">
-          Data Scientist
-        </p>
-
-        <ul>
+</article>
+  <article class="item">
+ <div class="item-header"><h3>LG CNS</h3><span class="date">Feb 2020 – Feb 2022</span></div>
+ <p class="role">Data Scientist</p>
+         <ul>
           <li>
-            Delivered end-to-end analytics and machine-learning projects for
-            LG Electronics, LG Uplus, and LG Display across manufacturing,
-            customer analytics, and experimentation.
+            Developed statistical testing capabilities for LG Uplus’ A/B testing platform to compare app variants and assess statistical significance. Implemented multi-armed bandit methods for dynamic traffic allocation.
           </li>
 
           <li>
-            Developed tree-based quality-monitoring models and automated
-            analytics pipelines for large-scale manufacturing data using
-            MADlib and GPDB.
+            Developed notification rules based on appliance usage patterns for LG Electronics’ proactive-care services. Defined evaluation metrics and built a Streamlit dashboard to assess service effectiveness.
           </li>
 
           <li>
-            Designed experimentation data structures and statistical testing
-            workflows, and extended an A/B testing platform with
-            Multi-Armed Bandit-based traffic allocation.
+            Built analytics workflows using MADlib and Greenplum to identify manufacturing factors associated with display defects, supporting quality improvement at LG Display.
           </li>
 
           <li>
-            Developed proactive-care logic and behavioral conversion metrics
-            for home appliances, and delivered service-effectiveness analytics
-            through a Streamlit dashboard.
-          </li>
-
-          <li>
-            Built an RNN-based VOC classification model to identify recurring
-            telecommunications service issues and support prioritization of
-            improvement efforts.
+            Built an RNN-based classifier to identify recurring issues in customer feedback at LG Uplus and help teams prioritize service improvements.
           </li>
         </ul>
-      </div>
-
-
-      <div class="item">
-        <div class="item-header">
-          <h3>LG CNS</h3>
-          <span>Jan 2019 – Feb 2019</span>
-        </div>
-
-        <p class="role">
-          Data Science Intern
-        </p>
-
-        <ul>
-          <li>
-            Built a beverage demand-forecasting prototype from inventory and
-            sales data using clustering, feature selection, and tree-based
-            machine-learning models.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-    <!-- Education -->
-    <section>
-      <h2>Education</h2>
-
-      <div class="item">
-        <div class="item-header">
-          <h3>
-            Pohang University of Science and Technology (POSTECH)
-          </h3>
-          <span>Mar 2015 – Feb 2020</span>
-        </div>
-
-        <p class="role">
-          B.S. in Industrial &amp; Management Engineering
-        </p>
-
-        <p>
-          GPA: 3.6 / 4.3 · Graduated with High Honors
-        </p>
-      </div>
-
-
-      <div class="item">
-        <div class="item-header">
-          <h3>Graz University of Technology</h3>
-          <span>2018</span>
-        </div>
-
-        <p class="role">
-          Exchange Student
-        </p>
-      </div>
-    </section>
-
-
-    <!-- Research -->
-    <section>
-      <h2>Research Experience</h2>
-
-      <div class="item">
-        <div class="item-header">
-          <h3>
-            Statistics and Data Science Lab, POSTECH
-          </h3>
-          <span>Fall 2019</span>
-        </div>
-
-        <p class="role">
-          Research Intern
-        </p>
-
-        <ul>
-          <li>
-            Applied topic modeling to smart-factory news articles to identify
-            emerging themes and industry trends.
-          </li>
-
-          <li>
-            Built a regional safety index and used GIS-based analysis to
-            prioritize candidate locations for emergency safety infrastructure
-            in Seoul.
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="item">
-        <div class="item-header">
-          <h3>
-            Probability and Statistical Analysis Lab (PASTA), POSTECH
-          </h3>
-          <span>Spring 2019</span>
-        </div>
-
-        <p class="role">
-          Research Intern
-        </p>
-
-        <ul>
-          <li>
-            Applied mRMR feature selection to agricultural and fisheries
-            datasets to identify predictive variables for forecasting models.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-    <!-- Leadership -->
-    <section>
-      <h2>Leadership</h2>
-
-      <div class="item">
-        <div class="item-header">
-          <h3>
-            FIELD — National Student Industrial Engineering Association
-          </h3>
-          <span>2017</span>
-        </div>
-
-        <p class="role">
-          POSTECH Representative &amp; Head of Public Relations
-        </p>
-
-        <p>
-          Represented POSTECH and led external communications within a
-          nationwide industrial engineering student organization.
-        </p>
-      </div>
-    </section>
-
-
-    <!-- Skills -->
-    <section>
-      <h2>Technical Skills</h2>
-
-      <div class="skills">
-        <p>
-          <span class="skill-label">Programming</span>
-          <span>Python, SQL, R, C, C++</span>
-        </p>
-
-        <p>
-          <span class="skill-label">ML &amp; Analytics</span>
-          <span>
-            Statistical Modeling, A/B Testing, Multi-Armed Bandits,
-            Tree-based Models, CNNs, PCA, Clustering, NLP
-          </span>
-        </p>
-
-        <p>
-          <span class="skill-label">Applied AI</span>
-          <span>
-            RAG, Hybrid Retrieval, Vector Search, LangGraph,
-            Qdrant, ChromaDB, AI Agents
-          </span>
-        </p>
-
-        <p>
-          <span class="skill-label">Data &amp; Systems</span>
-          <span>
-            Oracle, GPDB, MADlib, MES, YMS, FastAPI,
-            Streamlit, Docker, Linux
-          </span>
-        </p>
-      </div>
-    </section>
-
-  </main>
+</article>
+  <article class="item">
+ <div class="item-header"><h3>LG CNS</h3><span class="date">Jan 2019 – Feb 2019</span></div>
+ <p class="role">Data Science Intern</p>
+ <ul><li>Built a prototype to forecast beverage demand from sales and inventory data using clustering, feature selection, and tree-based models.</li></ul>
+</article>
+ </section>
+ <section class="education">
+  <h2>Education</h2>
+  <article class="item">
+ <div class="item-header"><h3>Pohang University of Science and Technology (POSTECH)</h3><span class="date">Mar 2015 – Feb 2020</span></div>
+ <p class="role">B.S. in Industrial &amp; Management Engineering</p>
+ <p class="detail">GPA: 3.6/4.3 · Graduated with High Honors</p>
+</article><article class="item">
+ <div class="item-header"><h3>Graz University of Technology</h3><span class="date">2018</span></div>
+ <p class="role">Exchange Student</p>
+ 
+</article>
+ </section>
+ <section>
+  <h2>Research Experience</h2>
+  <article class="item">
+ <div class="item-header"><h3>Statistics and Data Science Lab, POSTECH</h3><span class="date">Fall 2019</span></div>
+ <p class="role">Research Intern</p>
+ <ul><li>Analyzed smart-factory news using topic modeling to identify emerging industry themes.</li><li>Developed a regional safety index and used GIS analysis to identify priority locations for emergency safety infrastructure in Seoul.</li></ul>
+</article><article class="item">
+ <div class="item-header"><h3>Probability and Statistical Analysis Lab (PASTA), POSTECH</h3><span class="date">Spring 2019</span></div>
+ <p class="role">Research Intern</p>
+ <ul><li>Used mRMR feature selection to identify predictors for forecasting models in agricultural and fisheries datasets.</li></ul>
+</article>
+ </section>
+ <section>
+  <h2>Leadership</h2>
+  <article class="item">
+ <div class="item-header"><h3>FIELD — National Student Industrial Engineering Association</h3><span class="date">2017</span></div>
+ <p class="role">POSTECH Representative &amp; Head of Public Relations</p>
+ <ul><li>Expanded the association from five universities into a nationwide network and organized an annual academic event for industrial engineering students.</li></ul>
+</article>
+ </section>
+ <section>
+  <h2>Technical Skills</h2>
+  <dl class="skills"><div><dt>Programming</dt><dd>Python, SQL, R; foundational knowledge of C and C++</dd></div><div><dt>Machine Learning &amp; Analytics</dt><dd>Statistical modeling, A/B testing, multi-armed bandits, tree-based models, CNNs, clustering, PCA, NLP</dd></div><div><dt>Applied AI</dt><dd>RAG, hybrid search, reranking, vector search, AI agents, LangGraph, Qdrant, ChromaDB</dd></div><div><dt>Data &amp; Development Tools</dt><dd>Oracle, Greenplum, MADlib, FastAPI, Streamlit, Docker, Linux</dd></div><div><dt>Manufacturing Systems</dt><dd>MES, YMS</dd></div></dl>
+ </section>
+</main>
 </body>
 </html>
