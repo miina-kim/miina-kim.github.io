@@ -86,3 +86,17 @@ strong { font-weight: 650; }
  .skills dt, .skills dd { font-size: 9pt; }
  a { color: inherit; }
 }
+
+/* Contact icons and labels */
+.contact { gap: 20px; }
+.contact-link { display: inline-flex; align-items: center; gap: 7px; line-height: 1.2; }
+.contact-link > span:last-child { text-decoration: underline; text-underline-offset: 2px; }
+.mail-icon { width: 18px; height: 15px; flex: 0 0 18px; color: var(--muted); }
+.linkedin-icon { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; flex: 0 0 16px; border-radius: 2px; background: #0066cc; color: #fff; font: 700 10px/1 Arial, sans-serif; }
+@media print {
+ .contact { gap: 15pt; }
+ .mail-icon { width: 12pt; height: 10pt; flex-basis: 12pt; }
+ .linkedin-icon { width: 11pt; height: 11pt; flex-basis: 11pt; font-size: 7pt; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}
+.contact-link { white-space: nowrap; flex-shrink: 0; }
+.contact-link > span:last-child { white-space: nowrap; overflow-wrap: normal; flex-shrink: 0; }
